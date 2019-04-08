@@ -1,2 +1,1 @@
-Configure the file structure and configuration of the Phaser 3 template.
-Go to https://gamedevacademy.org/phaser-3-tutorial/ for more details.
+Add a background.

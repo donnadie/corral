@@ -1,4 +1,4 @@
-// create a new scene named "Game"
+// create a new scene named " Game "
 let gameScene = new Phaser.Scene('Game');
 
 
@@ -10,11 +10,17 @@ gameScene.init = function() {
 // load asset files for our game
 gameScene.preload = function() {
   
+  // load images
+  this.load.image('corral', 'assets/images/corral.png');
 };
 
 // executed once, after assets were loaded
 gameScene.create = function() {
   
+  // background
+  let corral = this.add.sprite(0, 0, 'corral');
+  // change origin to the top-left of the sprite
+  corral.setOrigin(0, 0);
 };
 
 // executed on every frame (60 times per second)
